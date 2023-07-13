@@ -12,7 +12,7 @@
 
 ### first of all install packages
 
-`npm i or  npm install`
+`npm i or npm install`
 
 ### run project
 
