@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* .my-button{
+    background-color: brown;
+    color:white;
+  } */
+  .left-side {
+    width: calc(100% - 400px);
+  }
+  .right-side {
+    width: 400px;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
