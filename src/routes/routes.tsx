@@ -9,51 +9,61 @@ import Layout from "@/layouts";
 import DashboardPage from "@/pages/panel/dashboard";
 import ProfilePage from "@/pages/panel/profile";
 
-const authRoutes = createBrowserRouter([
-  {
-    path: "/auth",
-    element: <Navigate to="/auth/login" replace />,
-  },
-  {
-    path: "/auth",
-    children: [
-      {
-        // index: true,
-        path: "login",
-        element: <LoginRouter />,
-      },
-      {
-        path: "signup",
-        element: <SignUpPage />,
-      },
-    ],
-  },
-  {
-    path: "*",
-    element: <Navigate to="/auth/login" replace />,
-  },
-]);
+const routesOptions = {
+  basename: "/panel",
+};
 
-const protectedRoutes = createBrowserRouter([
-  {
-    path: "/panel",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <DashboardPage />,
-      },
-      {
-        path: "profile",
-        element: <ProfilePage />,
-      },
-    ],
-  },
-  {
-    path: "*",
-    element: <Navigate to="/panel" replace />,
-  },
-]);
+const authRoutes = createBrowserRouter(
+  [
+    {
+      path: "/auth",
+      element: <Navigate to="/auth/login" replace />,
+    },
+    {
+      path: "/auth",
+      children: [
+        {
+          // index: true,
+          path: "login",
+          element: <LoginRouter />,
+        },
+        {
+          path: "signup",
+          element: <SignUpPage />,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/auth/login" replace />,
+    },
+  ],
+  routesOptions
+);
+
+const protectedRoutes = createBrowserRouter(
+  [
+    {
+      path: "/panel",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <DashboardPage />,
+        },
+        {
+          path: "profile",
+          element: <ProfilePage />,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <Navigate to="/panel" replace />,
+    },
+  ],
+  routesOptions
+);
 
 export default {
   authRoutes,
