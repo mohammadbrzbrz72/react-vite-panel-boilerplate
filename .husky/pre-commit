@@ -3,4 +3,7 @@
 
 # npx lint-staged && npm test
 npx lint-staged
-# npx validate-branch-name
+npx validate-branch-name
+
+# Husky can prevent you from bad git commit, git push and more. If you are getting this error check your code syntax, in case if you are getting this error even your code is valid. Please use the below command:
+# git commit -m "message" --no-verify
