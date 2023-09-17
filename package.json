@@ -1,7 +1,8 @@
 {
   "name": "react-vite-panel-boilerplate",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.5.0",
+  "description": "A template for react dashboard projects",
   "type": "module",
   "homepage": "panel",
   "scripts": {
@@ -17,6 +18,19 @@
     "pattern": "^(main|develop|(feat|fix|hotfix|docs|style|refactor|test|perf|ci|temp)/[A-Za-z0-9_-]+)$",
     "errorMsg": "Your branch name should follow our rules!"
   },
+  "author": {
+    "name": "Mohammad Barzegar",
+    "email": "mohammadbrzbrz72@gmail.com",
+    "url": "https://github.com/mohammadbrzbrz72/"
+  },
+  "license": "MIT License",
+  "keywords": [
+    "prettier",
+    "vitejs",
+    "dashboard",
+    "typescript",
+    "javascript"
+  ],
   "dependencies": {
     "@emotion/babel-plugin": "^11.11.0",
     "@emotion/react": "^11.11.1",
@@ -38,6 +52,7 @@
     "reduxjs-toolkit-persist": "^7.2.1"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "@types/redux-persist": "^4.3.1",

@@ -38,7 +38,7 @@ const authRoutes = createBrowserRouter(
       element: <Navigate to="/auth/login" replace />,
     },
   ],
-  routesOptions
+  routesOptions,
 );
 
 const protectedRoutes = createBrowserRouter(
@@ -62,7 +62,7 @@ const protectedRoutes = createBrowserRouter(
       element: <Navigate to="/panel" replace />,
     },
   ],
-  routesOptions
+  routesOptions,
 );
 
 export default {
