@@ -40,6 +40,6 @@ We need to install the following dependencies:
 
 - eslint-plugin-import: Tells ESLint how to resolve imports.
 
-- eslint-plugin-jsx-a11y: Checks for accessiblity issues.
+- eslint-plugin-jsx-a11y: Checks for accessibility issues.
 
 - eslint-plugin-react: React specific linting rules for ESLint.

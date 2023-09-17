@@ -21,7 +21,7 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
 
-    /* We're adding "@" alias for src directory */
+    /* Add "@" alias for src directory */
     "types": ["node"],
     "paths": {
       "@/*": ["./src/*"]

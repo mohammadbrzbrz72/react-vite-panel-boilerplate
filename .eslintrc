@@ -1,28 +1,33 @@
 {
   "env": { "browser": true, "es2020": true },
   "extends": [
+    // By extending from a plugin config, we can get recommended rules without having to add them manually.
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react-hooks/recommended",
     "plugin:import/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended",
+    // This disables the formatting rules in ESLint that Prettier is going to be responsible for handling.
+    // Make sure it's always the last config, so it gets the chance to override other configs.
     "eslint-config-prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": { "ecmaVersion": 6, "sourceType": "module" },
   "settings": {
     "react": {
+      // Tells eslint-plugin-react to automatically detect the version of React to use.
       "version": "detect"
     },
     "import/resolver": {
+      // Tells eslint how to resolve imports
       "node": {
         "paths": ["src"],
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
     }
   },
-
+  // Add your own rules here to override ones from the extended configs.
   "rules": {
     // With no-unused-vars we will ensure that any unused variable will trigger an error.
     "no-unused-vars": [
@@ -35,6 +40,7 @@
       }
     ],
     // "off": ESLint won't enforce the import of React in files with JSX (import React from 'react').
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-non-null-assertion": "off"
   }
 }
