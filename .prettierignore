@@ -2,7 +2,6 @@ node_modules/
 dist/
 .prettierrc
 .prettierrc.js
-/node_modules
 /build
 /coverage
 **/__generated__

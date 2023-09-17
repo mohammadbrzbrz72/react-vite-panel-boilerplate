@@ -8,16 +8,13 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "prettier": "prettier --write --config ./.prettierrc --ignore-unknown",
+    "preview": "vite preview",
+    "prepare": "husky install"
   },
   "validate-branch-name": {
     "pattern": "^(stage|main|develop){1}$|^(etlo|other)/{1}(feat|fix|hotfix|docs|style|refactor|test|perf|ci|temp)/[A-Za-z0-9_-]+$",
     "errorMsg": "Your branch name should follow our rules!"
-  },
-  "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": [
-      "npm run lint"
-    ]
   },
   "dependencies": {
     "@emotion/babel-plugin": "^11.11.0",
