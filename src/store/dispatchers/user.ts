@@ -3,7 +3,7 @@ import { useCallback } from "react";
 import { useAppDispatch } from "../hooks";
 import { userSlice } from "../features/user";
 
-export function userSelector() {
+export function useUserSelector() {
   const dispatch = useAppDispatch();
 
   const dispatchNewUser = useCallback(() => {
@@ -12,7 +12,7 @@ export function userSelector() {
         fullname: "sara female",
         age: 29,
         gender: "female",
-      })
+      }),
     );
   }, []);
 

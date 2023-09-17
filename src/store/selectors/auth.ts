@@ -1,6 +1,6 @@
 import { useAppSelector } from "../hooks";
 
-export function authSelector() {
+export function useAuthSelector() {
   const auth = useAppSelector((state) => state.auth);
 
   return auth;

@@ -8,7 +8,7 @@ interface IDispatchAuth {
   isLogin: boolean;
 }
 
-export function userSelector() {
+export function useUserSelector() {
   const dispatch = useAppDispatch();
 
   const dispatchAuth = useCallback((data: IDispatchAuth) => {

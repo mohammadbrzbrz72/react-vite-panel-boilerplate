@@ -1,6 +1,6 @@
 import { useAppSelector } from "../hooks";
 
-export function userSelector() {
+export function useUserSelector() {
   const user = useAppSelector((state) => state.user);
 
   return user;

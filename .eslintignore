@@ -2,12 +2,9 @@ node_modules/
 dist/
 env.d.ts
 src/vite-env.d.ts
-.prettierrc
-.prettierrc.js
-.prettierrc.json
-.eslintrc
-.eslintrc.js
-.eslintrc.json
+.prettierrc*
+.eslintrc*
+.hintrc
 build
 public
 .env.*

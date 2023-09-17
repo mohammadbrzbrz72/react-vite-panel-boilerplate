@@ -1,7 +1,7 @@
 import { RouterProvider } from "react-router-dom";
 
 import router from "./routes";
-import { authSelector } from "@/store/selectors/auth";
+import { useAuthSelector } from "@/store/selectors/auth";
 
 /**
   ** local project route: http://localhost:5173/panel/auth/login
@@ -15,7 +15,7 @@ import { authSelector } from "@/store/selectors/auth";
  */
 
 export default function Provider() {
-  const { isLogin } = authSelector();
+  const { isLogin } = useAuthSelector();
 
   return (
     <RouterProvider

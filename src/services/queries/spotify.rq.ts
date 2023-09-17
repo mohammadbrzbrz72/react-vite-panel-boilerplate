@@ -3,10 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import * as spotifyApis from "../apis/spotify-music.api";
 import type * as IFs from "../interfaces/spotify-music.interfaces";
 
-export function getSpotifySearchQuery(
+export function useGetSpotifySearchQuery(
   _data: IFs.ISpotifySearchApi,
   query: string,
-  enabled: boolean
+  enabled: boolean,
 ) {
   const result = useQuery({
     queryKey: ["repoData", query],

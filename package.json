@@ -7,13 +7,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier --write --config ./.prettierrc --ignore-unknown",
+    "lint": "npx eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "npx prettier --write --config ./.prettierrc --ignore-unknown",
     "preview": "vite preview",
     "prepare": "husky install"
   },
   "validate-branch-name": {
-    "pattern": "^(main|develop){1}$|^(etlo|other)/{1}(feat|fix|hotfix|docs|style|refactor|test|perf|ci|temp)/[A-Za-z0-9_-]+$",
+    "pattern": "^(main|develop|(feat|fix|hotfix|docs|style|refactor|test|perf|ci|temp)/[A-Za-z0-9_-]+)$",
     "errorMsg": "Your branch name should follow our rules!"
   },
   "dependencies": {
@@ -24,10 +24,6 @@
     "@types/node": "^20.4.1",
     "axios": "^1.4.0",
     "clsx": "^1.2.1",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
-    "eslint-plugin-react": "^7.33.2",
     "i18next": "^23.5.1",
     "i18next-browser-languagedetector": "^7.1.0",
     "prettier": "^3.0.3",
@@ -49,6 +45,12 @@
     "@vitejs/plugin-react-swc": "^3.3.2",
     "autoprefixer": "^10.4.14",
     "eslint": "^8.44.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
     "husky": "^8.0.3",

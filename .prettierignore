@@ -1,9 +1,10 @@
 node_modules/
 dist/
-.prettierrc
-.prettierrc.js
+# .prettierrc
+# .prettierrc.js
+# .prettierrc.json
 /build
 /coverage
 **/__generated__
-*.json
-*.md
+# *.json
+# *.md
