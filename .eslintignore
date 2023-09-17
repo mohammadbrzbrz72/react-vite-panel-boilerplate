@@ -4,5 +4,15 @@ env.d.ts
 src/vite-env.d.ts
 .prettierrc
 .prettierrc.js
+.prettierrc.json
 .eslintrc
 .eslintrc.js
+.eslintrc.json
+build
+public
+.env.*
+.eslintignore
+.gitignore
+*.json
+package.json
+package-lock.json
