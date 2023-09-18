@@ -14,3 +14,4 @@ public
 package.json
 package-lock.json
 mocks
+vite.config.ts

@@ -1,7 +1,7 @@
+import "./locales/i18n";
+import Router from "./routes";
 import ReactQueryProvider from "./services/queries/react-query/rq.provider";
 import ReduxProvider from "./store/provider";
-import Router from "./routes";
-import "./locales/i18n";
 
 function App() {
   return (
