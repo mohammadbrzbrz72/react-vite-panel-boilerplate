@@ -22,6 +22,7 @@ module.exports = {
     sourceType: "module",
     // This is required for a typescript project.
     // "project": ["./tsconfig.json"]
+    // or bottom way
     project: true,
     tsconfigRootDir: __dirname,
   },
@@ -35,12 +36,13 @@ module.exports = {
     },
     "import/ignore": [],
     "import/resolver": {
-      // Tells eslint how to resolve imports
+      // Tells eslint how to resolve imports from built-in and third party packages
       node: {
         baseUrl: "./",
         paths: ["src"],
         extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
+      // Tells eslint how to resolve imports from alias
       alias: {
         map: [["@", "./src"]], // Adjust the path accordingly
         extensions: [".js", ".jsx", ".ts", ".tsx", ".json"],
