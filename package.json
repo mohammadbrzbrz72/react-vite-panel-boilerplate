@@ -4,7 +4,11 @@
   "version": "0.5.0",
   "description": "A template for react dashboard projects",
   "type": "module",
-  "homepage": "https://github.com/mohammadbrzbrz72/react-vite-panel-boilerplate",
+  "homepage": "https://github.com/mohammadbrzbrz72/react-vite-panel-boilerplate#readme",
+  "repository": {
+    "url": "https://github.com/mohammadbrzbrz72/react-vite-panel-boilerplate",
+    "type": "git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

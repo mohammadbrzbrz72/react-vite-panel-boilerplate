@@ -1,11 +1,8 @@
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 
-// auth routes
+import Layout from "@/layouts";
 import LoginRouter from "@/pages/auth/login";
 import SignUpPage from "@/pages/auth/sign-up";
-
-// protected routes
-import Layout from "@/layouts";
 import DashboardPage from "@/pages/panel/dashboard";
 import ProfilePage from "@/pages/panel/profile";
 

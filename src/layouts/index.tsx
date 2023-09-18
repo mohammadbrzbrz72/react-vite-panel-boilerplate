@@ -1,12 +1,12 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "./Header";
 import Footer from "./Footer";
+import Header from "./Header";
 
 const styles = {
   main: `
     min-h-screen w-full
-    overflow-x-hidden
+    overflow-x-hidden 
     relative
     pb-20
   `,

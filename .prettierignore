@@ -1,8 +1,5 @@
 node_modules/
-dist/
-# .prettierrc
-# .prettierrc.js
-# .prettierrc.json
+dist/ 
 /build
 /coverage
 **/__generated__
