@@ -4,7 +4,6 @@
   "version": "0.5.0",
   "description": "A template for react dashboard projects",
   "type": "module",
-  "homepage": "https://github.com/mohammadbrzbrz72/react-vite-panel-boilerplate#readme",
   "repository": {
     "url": "https://github.com/mohammadbrzbrz72/react-vite-panel-boilerplate",
     "type": "git"
@@ -29,11 +28,14 @@
   },
   "license": "MIT License",
   "keywords": [
-    "prettier",
     "vitejs",
-    "dashboard",
     "typescript",
-    "javascript"
+    "javascript",
+    "prettier",
+    "dashboard",
+    "panel",
+    "template",
+    "msw"
   ],
   "dependencies": {
     "@emotion/babel-plugin": "^11.11.0",
