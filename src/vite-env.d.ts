@@ -8,7 +8,7 @@ declare module "redux-persist/lib/storage";
 declare global {
   interface Window {
     msw: {
-      __mswStop: StopHandler;
+      stop: StopHandler;
       worker: SetupWorker;
       rest: typeof rest;
     };

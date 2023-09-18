@@ -13,6 +13,6 @@ if (import.meta.env.DEV) {
      * Specifies how to handle a request that is not listed in the request handlers.
      * "error" -> Produces an error in the browser's console.
      */
-    onUnhandledRequest: "error",
+    // onUnhandledRequest: "error",
   });
 }
