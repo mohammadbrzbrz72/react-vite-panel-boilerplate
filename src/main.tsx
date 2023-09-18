@@ -8,7 +8,8 @@ import "./styles/index.css";
 // Start Mock Service Worker in development mode
 if (import.meta.env.DEV) {
   // eslint-disable-next-line @typescript-eslint/no-var-requires
-  const { worker } = require("./mocks/browser");
+  const { worker } = await import("../mocks/browser.ts");
+
   worker.start();
 }
 
