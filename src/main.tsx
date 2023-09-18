@@ -6,11 +6,10 @@ import "./styles/globals.css";
 import "./styles/index.css";
 
 // Start Mock Service Worker in development mode
-// if (import.meta.env.DEV) {
-//   /* eslint-disable @typescript-eslint/no-unused-vars */
-//   const { worker } = await import("../mocks/browser.ts");
-//   worker.start();
-// }
+if (import.meta.env.DEV) {
+  const { worker } = await import("../mocks/browser.ts");
+  worker.start();
+}
 
 const root = document.getElementById("root") as HTMLElement;
 
