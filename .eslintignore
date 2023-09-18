@@ -13,3 +13,4 @@ public
 *.json
 package.json
 package-lock.json
+mocks
