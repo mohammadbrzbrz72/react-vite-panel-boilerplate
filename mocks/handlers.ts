@@ -4,4 +4,4 @@ import authRoutes from "./routes/auth";
 import countriesRoutes from "./routes/countries";
 import userRoutes from "./routes/user";
 
-export const handlers = [authRoutes, countriesRoutes, userRoutes].flat();
+export const mocks = [authRoutes, countriesRoutes, userRoutes].flat();

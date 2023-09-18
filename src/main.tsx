@@ -4,12 +4,8 @@ import App from "./App";
 // global styles
 import "./styles/globals.css";
 import "./styles/index.css";
-
-// Start Mock Service Worker in development mode
-if (import.meta.env.DEV) {
-  const { worker } = await import("../mocks/browser.ts");
-  worker.start();
-}
+// Start mock server in development mode (See success message in console log -> [MSW] Mocking enabled.)
+import "./utils/mock";
 
 const root = document.getElementById("root") as HTMLElement;
 
