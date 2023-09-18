@@ -7,6 +7,7 @@ const routes: RoutesType = [];
 routes.push(
   rest.get("/user", (req, res, ctx) => {
     const userId = req.url.searchParams.get("userId");
+    console.log(req.params.postId);
 
     if (userId === "abc-123") {
       // Return a mocked response only if the `userId` query parameter
